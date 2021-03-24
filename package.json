@@ -18,7 +18,9 @@
   "homepage": "https://github.com/bernardd0/video-maker#readme",
   "dependencies": {
     "algorithmia": "^0.3.10",
+    "axios": "^0.21.1",
     "readline-sync": "^1.4.10",
-    "sbd": "^1.0.18"
+    "sbd": "^1.0.18",
+    "watson-developer-cloud": "^4.0.1"
   }
 }
