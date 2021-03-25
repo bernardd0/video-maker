@@ -11,11 +11,12 @@ const nlu = new NaturalLanguageUnderstandingV1({
   url: 'https://gateway.watsonplatform.net/natural-language-understanding/api/'
 })
 
-
 const state = require('./state.js')
 
 async function robot() {
-	//console.log('> [text-robot] Starting...')
+
+async function robot() {
+
 	const content = state.load()
 
 	await fetchContentFromWikipedia(content)
@@ -25,6 +26,8 @@ async function robot() {
 	//fetchKeywordsOfAllSentences(content)
 
 	state.save(content)
+
+	await fetchKeywordsOfAllSentences(content)
 
 	await fetchKeywordsOfAllSentences(content)
 
